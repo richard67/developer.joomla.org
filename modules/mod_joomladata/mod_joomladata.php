@@ -100,7 +100,7 @@ switch ($dataSource)
 		// Sort the data
 		if ($dataSource == 'db_version' || $dataSource == 'cms_version')
 		{
-			ksort($rawData['data'][$dataSource]);
+			ksort($rawData['data'][$dataSource], SORT_NATURAL);
 		}
 		else
 		{
